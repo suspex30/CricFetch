@@ -28,6 +28,7 @@
    ```sh
    python Cricfetch.py
    ```
+
 ## Contribution
 
 Contributions are welcome! If you'd like to contribute to CricFetch, please follow these steps:
@@ -42,6 +43,16 @@ Contributions are welcome! If you'd like to contribute to CricFetch, please foll
 
 CricFetch uses real-time updates from **ESPN** and **NDTV Sports**. We acknowledge and appreciate their extensive cricket coverage, which helps us provide the latest and most comprehensive news to our users.
 
+## Important: ANSI Escape Code Support
+
+This program uses ANSI escape codes for colored output and text formatting. To experience the full functionality, please run this program in a terminal that supports ANSI escape sequences, such as:
+- Linux terminal
+- macOS terminal
+- Windows Terminal (with ANSI support enabled)
+- Any terminal emulator with ANSI support (e.g., Hyper, iTerm2, Git Bash)
+
+If you're using a terminal that does not support ANSI codes, you may see unusual characters or formatting issues.
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
