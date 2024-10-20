@@ -60,6 +60,7 @@ def clear_screen():
     print("\033[2J\033[H", end='')
 
 def display_precautions():
+    clear_screen() 
     """Displays a set of precautionary instructions to the user."""
     terminal_width = os.get_terminal_size().columns
     print(f"\033[38;2;255;215;0;1m{'-' * terminal_width}{END}")
