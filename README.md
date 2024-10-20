@@ -1,6 +1,6 @@
 # CricFetch
 
-**CricFetch** is an intuitive tool developed by Amitesh that brings you the latest cricket news headlines and allows users to search for news on various cricket topics. By sourcing information from trusted platforms like **ESPN** and **NDTV Sports**, CricFetch ensures you stay updated with the most accurate and comprehensive cricket news.
+**CricFetch** is an intuitive tool developed that brings you the latest cricket news headlines and allows users to search for news on various cricket topics. By sourcing information from trusted platforms like **ESPN** and **NDTV Sports**, CricFetch ensures you stay updated with the most accurate and comprehensive cricket news.
 
 ## Features
 
