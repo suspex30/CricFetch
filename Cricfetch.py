@@ -57,7 +57,7 @@ def save_to_file(heading, content):
 
 def clear_screen():
     """Clears the terminal screen."""
-    print("\033[2J\033[H", end='')
+    os.system('cls' if os.name=='nt' else 'clear') 
 
 def display_precautions():
     clear_screen() 
