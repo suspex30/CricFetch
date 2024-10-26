@@ -42,7 +42,7 @@ def fetch_page(link, message):
 def save_to_file(heading, content):
     """Saves the extracted content to a file."""
     for attempt in range(2):
-        file_name = input(f"Enter file name or path\n{RED}Note: Existing files will be overwritten{END}\n")
+        file_name = input(f"Enter file name or path\n{RED}\nNote: Existing files will be overwritten{END}\n")
         try:
             with open(file_name, "w") as file:
                 file.write(heading + "\n")
@@ -89,7 +89,7 @@ def handle_exit_input(user_input):
 def main():
     src = fetch_page("https://www.espn.in/cricket/", "Extracting today's headlines")
     if src is None:
-        print(f"{RED}Issue occurred while extracting news. Please check your connection or try again later.{END}")
+        print(f"\n\033[1mKindly check your connection or try again later.{END}")
         os._exit(0)
 
     original_src = copy.deepcopy(src)
@@ -153,7 +153,7 @@ def main():
             if re.fullmatch(r'[A-Za-z0-9+]+', topic):
                 src = fetch_page(f"https://sports.ndtv.com/search/news/?q={topic}", "Extracting news")
                 if src is None:
-                    print(f"{RED}Kindly check your internet connection or try again later.{END}")
+                    print(f"\n\033[1mKindly check your internet connection or try again later.{END}")
                     os._exit(0)
                 original_src = copy.deepcopy(src)
 
@@ -179,7 +179,7 @@ def main():
                         print("\n")
                         src = fetch_page(selected_news, "Extracting news")
                         if src is None:
-                            print(f"{RED}Check your internet connection or try again later.{END}")
+                            print(f"\n\033[1mKindly check your internet connection or try again later.{END}")
                             os._exit(0)
                     except Exception:
                         print(f"\n\033[1mProgram terminated due to {RED}invalid news number.{END}")
